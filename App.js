@@ -6,6 +6,7 @@ import {
   View,
   TouchableWithoutFeedback,
 } from "react-native";
+import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
 import Bird from "./components/Bird";
 import Obstacles from "./components/Obstacles";
 
@@ -20,7 +21,7 @@ export default function App() {
   );
   const [randomBottom, setRandomBottom] = useState(0);
   const [randomBottom2, setRandomBottom2] = useState(0);
-  const obstaclesWidth = 60;
+  const obstaclesWidth = 90;
   const obstaclesHeight = 350;
   const gap = 200;
   const gravity = 3;
@@ -133,7 +134,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#3DB2FF",
     alignItems: "center",
     justifyContent: "center",
   },

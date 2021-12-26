@@ -1,28 +1,28 @@
 import React from "react";
-import { View } from "react-native";
+import { Image } from "react-native";
 
 function Obstacles(props) {
   return (
     <>
-      <View
+      <Image
         style={{
           position: "absolute",
-          backgroundColor: props.color,
           width: props.obstaclesWidth,
           height: props.obstaclesHeight,
           left: props.obstaclesLeft,
           bottom: props.randomBottom + props.obstaclesHeight + props.gap,
         }}
+        source={require("../imges/obstacleTop.png")}
       />
-      <View
+      <Image
         style={{
           position: "absolute",
-          backgroundColor: props.color,
           width: props.obstaclesWidth,
           height: props.obstaclesHeight,
           left: props.obstaclesLeft,
           bottom: props.randomBottom,
         }}
+        source={require("../imges/obstacle.png")}
       />
     </>
   );

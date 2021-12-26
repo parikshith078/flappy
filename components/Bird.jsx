@@ -1,20 +1,20 @@
-import { View } from "react-native";
+import { Image } from "react-native";
 
 import React from "react";
 
 function Bird(props) {
-  const birdWidth = 50;
+  const birdWidth = 90;
   return (
-    <View
+    <Image
       style={{
         position: "absolute",
         width: birdWidth,
         height: 60,
-        backgroundColor: "blue",
         left: props.birdLeft - birdWidth / 2,
         bottom: props.birdBottom,
       }}
-    ></View>
+      source={require("../imges/bird.png")}
+    />
   );
 }
 
